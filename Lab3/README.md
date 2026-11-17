@@ -1,14 +1,24 @@
-# Lab 3: Decoder ve Multiplexer ile Kombinasyonel Tasarım
+# Lab 3: Kombinasyonel Devre Tasarımı ve Çoklayıcılar
 
-Kombinasyonel devreler MSI entegreleriyle (74151 multiplexer, 74154 decoder) gerçeklendi. Uzun doğruluk tablolarının temel kapılara göre çok daha az donanımla çözülebildiği gözlemlendi.
+Bu laboratuvarda çoklayıcılar (Multiplexer - MUX) ve dekoderler kullanılarak kombinasyonel mantık devreleri ve parity (eşlik) üreticileri tasarlanmıştır.
+
+## 📂 Devreler ve İçerikler
 
 | Dosya | Açıklama |
 |-------|----------|
-| `Odd-Parity-Generator.circ` | 74151 ile 4 bitlik **tek eşlik** (odd parity) üreteci: kodda 1'lerin sayısı çift ise P=1 |
-| `Parity-Generator-Mux.circ` | Aynı üreteç, A ve B seçme hattı olarak kullanılarak tasarlandı. Veri girişleri C XNOR D ve C XOR D |
-| `Even-Odd-Sum-74154-NAND.circ` | İki 2-bitlik sayının (A, B) toplamı tek ise Z1, çift ise Z2 çıkışı. Bir adet 74154 decoder ve yalnızca NAND kapıları (7430) kullanıldı |
-| `Even-Odd-Sum-3to8-Decoders.circ` | Aynı fonksiyon iki adet 3-to-8 decoder ile. A1, iki decoder arasında enable sinyaliyle seçim yapar |
+| `Lab3-PreLab-Q1-Odd-Parity-Generator.circ` | Tek eşlik (Odd Parity) üreteci devresi. |
+| `Lab3-PreLab-Q2-Parity-Generator-Mux.circ` | MUX kullanılarak gerçeklenen eşlik üreticisi. |
+| `Lab3-PreLab-Q3-Even-Odd-Sum-74154-NAND.circ` | 74154 dekoder ve NAND kapıları ile çift/tek toplam ve fonksiyon tasarımı. |
 
-**Not:** 74154 çıkışları aktif-düşük olduğu için, ilgili minterm çıkışları NAND kapısına bağlanarak ek NOT veya OR kapısına gerek kalmadan doğru lojik seviye elde edildi.
+> **Kütüphane Bağımlılığı:** Devrelerin çalışabilmesi için `74TTLs_1.03.circ` kütüphane dosyasının proje ile aynı dizinde bulunması gerekmektedir.
 
-**Kütüphane:** `74TTLs_1.03`
+## 📸 Ekran Görüntüleri
+
+### Eşlik Üreteci (Odd Parity Generator)
+![Odd Parity Generator](images/Lab3-PreLab-Q1-Odd-Parity-Generator.png)
+
+### MUX ile Parity Üreteci
+![Parity Generator Mux](images/Lab3-PreLab-Q2-Parity-Generator-Mux.png)
+
+### 74154 Dekoder ve NAND Devresi
+![Even Odd Sum 74154](images/Lab3-PreLab-Q3-Even-Odd-Sum-74154-NAND.png)
