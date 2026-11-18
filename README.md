@@ -20,6 +20,13 @@ Dosyalar `.circ` uzantılıdır ve [Logisim](http://www.cburch.com/logisim/) vey
 
 Bazı devreler `74TTLs_1.03` kütüphanesini kullanır (7400 serisi entegreler için). Dosyayı açarken kütüphane bulunamazsa `Project > Load Library` menüsünden bu kütüphaneyi yükleyin. Lab2'deki bazı devreler ek olarak `logi7400ic` ve `7-segment-display-driver` kütüphanelerini kullanır.
 
+## 👥 Geliştiriciler (Contributors)
+
+Bu laboratuvar çalışmaları aşağıdaki geliştiriciler tarafından ortaklaşa hazırlanmıştır:
+
+* **Muhammed Yıldırım** - [GitHub Profili](https://github.com/Muhyild25)
+* **Eren Güler** - [GitHub Profili](https://github.com/erenguler1)
+
 ## Lisans / Not
 
 Bu devreler eğitim amaçlı paylaşılmıştır. Kullanmadan önce lütfen kaynak gösteriniz.
